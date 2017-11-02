@@ -50,6 +50,9 @@ public class RegStud{
         case 4: ViewFee vfe = new ViewFee();
                 vfe.showFee(str);
                 break;
+        case 5: ViewIssuedBooks vib = new ViewIssuedBooks();
+                vib.putIssuedBooks(str);
+                break;
         case 6: ViewPersonalInfo vpi = new ViewPersonalInfo();
                 vpi.putInfo(str);
                 break;
