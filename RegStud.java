@@ -62,8 +62,10 @@ public class RegStud{
         case 9: ViewAchievement va = new ViewAchievement();
                 va.putAchievement(str);
                 break;
-        default: System.out.println("Under Construction");
-                 break;
+        case 10: Register reg = new Register();
+                reg.run();
+        default: System.out.println("Give the numbers which are present!!!");
+                break;
       }
     }
   }

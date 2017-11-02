@@ -11,6 +11,7 @@ public class AdminToParticular{
         System.out.println("2. Add & Update Fee");
         System.out.println("3. Add Achievement");
         System.out.println("4. Update Roll Number");
+        System.out.println("5. Back");
         System.out.print(">> ");
         opt=s.nextInt();
         System.out.println();
@@ -47,6 +48,9 @@ public class AdminToParticular{
                 break;
         case 4: UpdateRollNumber urn = new UpdateRollNumber();
                 urn.getNewRoll(str);
+                break;
+        case 5: Admin ad = new Admin();
+                ad.run3();
                 break;
         default: System.out.println("Give the numbers which are present!!!");
                  break;

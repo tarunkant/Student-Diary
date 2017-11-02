@@ -22,7 +22,8 @@ public class Admin{
       case 2: AdminToParticular atp = new AdminToParticular();
               atp.run5();
               break;
-      case 3: return 1;
+      case 3: Register reg = new Register();
+              reg.run();
   }
     return 0;
 }

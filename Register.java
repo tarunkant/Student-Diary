@@ -22,7 +22,7 @@ public int run(){
       case 2: RegStud rs = new RegStud();
               rs.run2();
               break;
-      case 3: return 1;
+      case 3: System.exit(0);
   }
     return 0;
 }
