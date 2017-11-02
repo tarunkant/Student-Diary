@@ -10,7 +10,7 @@ public class NewStudDetail implements Serializable{
   public String[] fine = new String[2];
   public String[] fee = new String[2];
   public String[] achievement = new String[20];
-
+  public String[] book = new String[20];
 
   //public String[] arr1 = new String[20];
 
