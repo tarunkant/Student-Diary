@@ -17,15 +17,18 @@ public class NewStud{
         }
       }
       System.out.println();
-      System.out.println("2. Add Branch: ");
+      System.out.println("2. Add Your Name: ");
+      nsd.name = s.nextLine();
+      System.out.println();
+      System.out.println("3. Add Branch: ");
       nsd.branch = s.nextLine();
       System.out.println();
       // System.out.println("3. Add Courses: ");
       // nsd.course = s.nextLine();
-      System.out.println("3. Add Home Address: ");
+      System.out.println("4. Add Home Address: ");
       nsd.homeaddr = s.nextLine();
       System.out.println();
-      System.out.println("4. Add Mobile Number: ");
+      System.out.println("5. Add Mobile Number: ");
       nsd.mobileno = s.nextLine();
       System.out.println();
       AddNewStud ans = new AddNewStud(nsd);

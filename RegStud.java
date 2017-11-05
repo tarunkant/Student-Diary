@@ -8,7 +8,7 @@ public class RegStud{
         System.out.println();
         System.out.println("1. Add & Update Courses");
         System.out.println("2. View Courses");
-        System.out.println("3. View Course Details");
+        System.out.println("3. View Your Conselor");
         System.out.println("4. View Fee Details");
         System.out.println("5. Issued Books");
         System.out.println("6. View Personal info");
@@ -35,6 +35,10 @@ public class RegStud{
     for(NewStudDetail obj:pd.get()){
       if (obj.rollno.equals(str)){
         count = count + 1;
+        System.out.println();
+        System.out.println("---------------------------------------------");
+        System.out.println("Hey " + obj.name +  " Welcome to Your Account");
+        System.out.println("----------------------------------------------");
         break;
       }
     }
@@ -46,6 +50,9 @@ public class RegStud{
                 ac.getCourse(str);
                 break;
         case 2: ViewCourse vc = new ViewCourse(str);
+                break;
+        case 3: ViewCounselor vcl = new ViewCounselor();
+                vcl.putCounselor(str);
                 break;
         case 4: ViewFee vfe = new ViewFee();
                 vfe.showFee(str);

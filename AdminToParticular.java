@@ -13,7 +13,8 @@ public class AdminToParticular{
         System.out.println("4. Remove Books");
         System.out.println("5. Add Achievement");
         System.out.println("6. Update Roll Number");
-        System.out.println("7. Back");
+        System.out.println("7. Add & Update Counselor");
+        System.out.println("8. Back");
         System.out.print(">> ");
         opt=s.nextInt();
         System.out.println();
@@ -29,6 +30,10 @@ public class AdminToParticular{
     for(NewStudDetail obj:pd.get()){
       if (obj.rollno.equals(str)){
         count = count + 1;
+        System.out.println();
+        System.out.println("---------------------------------------------");
+        System.out.println("This Roll Number belongs to :    " + obj.name);
+        System.out.println("----------------------------------------------");
         break;
       }
     }
@@ -57,7 +62,10 @@ public class AdminToParticular{
         case 6: UpdateRollNumber urn = new UpdateRollNumber();
                 urn.getNewRoll(str);
                 break;
-        case 7: Admin ad = new Admin();
+        case 7: AddCounselor ac = new AddCounselor();
+                ac.setCounselor(str);
+                break;
+        case 8: Admin ad = new Admin();
                 ad.run3();
                 break;
         default: System.out.println("Give the numbers which are present!!!");
