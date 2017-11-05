@@ -7,7 +7,7 @@ public class AdminToAll{
     while(true){
         int opt=0;
         System.out.println();
-        System.out.println("1. Edit Course Details");
+        System.out.println("1. Add Course Details");
         System.out.println("2. Add Fee");
         System.out.println("3. Add Common Fine");
         System.out.println("4. Back");
@@ -21,7 +21,8 @@ public class AdminToAll{
     while(true){
       int opt = menu4();
       switch(opt){
-        case 1: System.out.println("Hey");
+        case 1: AddCourseDetails acd = new AddCourseDetails();
+                acd.addDetails();
                 break;
         case 2: AddFeeToAll aft = new AddFeeToAll();
                 aft.getFeeToAll();

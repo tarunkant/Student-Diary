@@ -4,7 +4,12 @@ public class ViewCounselor{
     for(NewStudDetail obj:pd.get()){
       if(obj.rollno.equals(str)){
         System.out.print("Counselor Name is:\t\t");
-        System.out.println(obj.counselor);
+        if(obj.counselor!=null){
+          System.out.println(obj.counselor);
+        }
+        else{
+          System.out.println("Counselor is not assigned yet!!!");
+        }
       }
     }
 }
