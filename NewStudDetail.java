@@ -14,6 +14,7 @@ public class NewStudDetail implements Serializable{
   public String[] book = new String[20];
   public String counselor;
   public String[] coursedetails = new String[20];
+  public String[] marks = new String[10];
   //public String[] arr1 = new String[20];
 
 }
